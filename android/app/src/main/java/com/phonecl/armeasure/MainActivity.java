@@ -1,11 +1,13 @@
 package com.phonecl.armeasure;
 
 import android.Manifest;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -50,6 +52,7 @@ public class MainActivity extends AppCompatActivity
     private Button btnReset;
     private Button btnUnit;
     private Button btnSave;
+    private ImageView ivSettings;
 
     private boolean permissionGranted = false;
     private boolean surfaceCreated = false;
@@ -77,6 +80,13 @@ public class MainActivity extends AppCompatActivity
         btnReset       = findViewById(R.id.btn_reset);
         btnUnit        = findViewById(R.id.btn_unit);
         btnSave        = findViewById(R.id.btn_save);
+        ivSettings     = findViewById(R.id.iv_settings);
+
+        // 设置按钮点击事件
+        ivSettings.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, com.phonecl.armeasure.settings.SettingsActivity.class);
+            startActivity(intent);
+        });
 
         // 防御：确认 GLSurfaceView 不为 null
         if (glSurfaceView == null) {

@@ -1,0 +1,175 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.phonecl.armeasure.debug"
+4    android:versionCode="1"
+5    android:versionName="1.0.0-debug" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+8-->/Users/fcj/workspace/Github_space/AR-Ruler/android/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->/Users/fcj/workspace/Github_space/AR-Ruler/android/app/src/main/AndroidManifest.xml
+10
+11    <!-- 相机权限 -->
+12    <uses-permission android:name="android.permission.CAMERA" />
+12-->/Users/fcj/workspace/Github_space/AR-Ruler/android/app/src/main/AndroidManifest.xml:6:5-65
+12-->/Users/fcj/workspace/Github_space/AR-Ruler/android/app/src/main/AndroidManifest.xml:6:22-62
+13    <!-- 传感器权限 -->
+14    <uses-permission android:name="android.permission.BODY_SENSORS" />
+14-->/Users/fcj/workspace/Github_space/AR-Ruler/android/app/src/main/AndroidManifest.xml:8:5-71
+14-->/Users/fcj/workspace/Github_space/AR-Ruler/android/app/src/main/AndroidManifest.xml:8:22-68
+15    <!-- 存储权限 -->
+16    <uses-permission
+16-->/Users/fcj/workspace/Github_space/AR-Ruler/android/app/src/main/AndroidManifest.xml:10:5-11:38
+17        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+17-->/Users/fcj/workspace/Github_space/AR-Ruler/android/app/src/main/AndroidManifest.xml:10:22-78
+18        android:maxSdkVersion="28" />
+18-->/Users/fcj/workspace/Github_space/AR-Ruler/android/app/src/main/AndroidManifest.xml:11:9-35
+19    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+19-->/Users/fcj/workspace/Github_space/AR-Ruler/android/app/src/main/AndroidManifest.xml:12:5-80
+19-->/Users/fcj/workspace/Github_space/AR-Ruler/android/app/src/main/AndroidManifest.xml:12:22-77
+20    <!-- 振动反馈 -->
+21    <uses-permission android:name="android.permission.VIBRATE" />
+21-->/Users/fcj/workspace/Github_space/AR-Ruler/android/app/src/main/AndroidManifest.xml:14:5-66
+21-->/Users/fcj/workspace/Github_space/AR-Ruler/android/app/src/main/AndroidManifest.xml:14:22-63
+22    <!-- 网络权限 -->
+23    <uses-permission android:name="android.permission.INTERNET" />
+23-->/Users/fcj/workspace/Github_space/AR-Ruler/android/app/src/main/AndroidManifest.xml:16:5-67
+23-->/Users/fcj/workspace/Github_space/AR-Ruler/android/app/src/main/AndroidManifest.xml:16:22-64
+24
+25    <!-- 相机特性 -->
+26    <uses-feature android:name="android.hardware.camera" />
+26-->/Users/fcj/workspace/Github_space/AR-Ruler/android/app/src/main/AndroidManifest.xml:19:5-60
+26-->/Users/fcj/workspace/Github_space/AR-Ruler/android/app/src/main/AndroidManifest.xml:19:19-57
+27    <uses-feature android:name="android.hardware.camera.autofocus" />
+27-->/Users/fcj/workspace/Github_space/AR-Ruler/android/app/src/main/AndroidManifest.xml:20:5-70
+27-->/Users/fcj/workspace/Github_space/AR-Ruler/android/app/src/main/AndroidManifest.xml:20:19-67
+28
+29    <!-- 传感器特性 -->
+30    <uses-feature android:name="android.hardware.sensor.accelerometer" />
+30-->/Users/fcj/workspace/Github_space/AR-Ruler/android/app/src/main/AndroidManifest.xml:23:5-74
+30-->/Users/fcj/workspace/Github_space/AR-Ruler/android/app/src/main/AndroidManifest.xml:23:19-71
+31    <uses-feature android:name="android.hardware.sensor.gyroscope" />
+31-->/Users/fcj/workspace/Github_space/AR-Ruler/android/app/src/main/AndroidManifest.xml:24:5-70
+31-->/Users/fcj/workspace/Github_space/AR-Ruler/android/app/src/main/AndroidManifest.xml:24:19-67
+32
+33    <queries>
+33-->[com.google.ar:core:1.32.0] /Users/fcj/.gradle/caches/transforms-3/3b35fa573196404c9adf81c57c209850/transformed/jetified-core-1.32.0/AndroidManifest.xml:29:5-31:15
+34        <package android:name="com.google.ar.core" />
+34-->[com.google.ar:core:1.32.0] /Users/fcj/.gradle/caches/transforms-3/3b35fa573196404c9adf81c57c209850/transformed/jetified-core-1.32.0/AndroidManifest.xml:30:9-54
+34-->[com.google.ar:core:1.32.0] /Users/fcj/.gradle/caches/transforms-3/3b35fa573196404c9adf81c57c209850/transformed/jetified-core-1.32.0/AndroidManifest.xml:30:18-51
+35    </queries>
+36
+37    <permission
+37-->[androidx.core:core:1.9.0] /Users/fcj/.gradle/caches/transforms-3/ee36a8fd21e43d64fe80e71e353cdb26/transformed/core-1.9.0/AndroidManifest.xml:22:5-24:47
+38        android:name="com.phonecl.armeasure.debug.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+38-->[androidx.core:core:1.9.0] /Users/fcj/.gradle/caches/transforms-3/ee36a8fd21e43d64fe80e71e353cdb26/transformed/core-1.9.0/AndroidManifest.xml:23:9-81
+39        android:protectionLevel="signature" />
+39-->[androidx.core:core:1.9.0] /Users/fcj/.gradle/caches/transforms-3/ee36a8fd21e43d64fe80e71e353cdb26/transformed/core-1.9.0/AndroidManifest.xml:24:9-44
+40
+41    <uses-permission android:name="com.phonecl.armeasure.debug.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+41-->[androidx.core:core:1.9.0] /Users/fcj/.gradle/caches/transforms-3/ee36a8fd21e43d64fe80e71e353cdb26/transformed/core-1.9.0/AndroidManifest.xml:26:5-97
+41-->[androidx.core:core:1.9.0] /Users/fcj/.gradle/caches/transforms-3/ee36a8fd21e43d64fe80e71e353cdb26/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
+42
+43    <application
+43-->/Users/fcj/workspace/Github_space/AR-Ruler/android/app/src/main/AndroidManifest.xml:26:5-55:19
+44        android:allowBackup="false"
+44-->/Users/fcj/workspace/Github_space/AR-Ruler/android/app/src/main/AndroidManifest.xml:27:9-36
+45        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+45-->[androidx.core:core:1.9.0] /Users/fcj/.gradle/caches/transforms-3/ee36a8fd21e43d64fe80e71e353cdb26/transformed/core-1.9.0/AndroidManifest.xml:28:18-86
+46        android:debuggable="true"
+47        android:extractNativeLibs="false"
+48        android:icon="@mipmap/ic_launcher"
+48-->/Users/fcj/workspace/Github_space/AR-Ruler/android/app/src/main/AndroidManifest.xml:28:9-43
+49        android:label="@string/app_name"
+49-->/Users/fcj/workspace/Github_space/AR-Ruler/android/app/src/main/AndroidManifest.xml:29:9-41
+50        android:roundIcon="@mipmap/ic_launcher_round"
+50-->/Users/fcj/workspace/Github_space/AR-Ruler/android/app/src/main/AndroidManifest.xml:30:9-54
+51        android:supportsRtl="true"
+51-->/Users/fcj/workspace/Github_space/AR-Ruler/android/app/src/main/AndroidManifest.xml:31:9-35
+52        android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+52-->/Users/fcj/workspace/Github_space/AR-Ruler/android/app/src/main/AndroidManifest.xml:32:9-65
+53        <activity
+53-->/Users/fcj/workspace/Github_space/AR-Ruler/android/app/src/main/AndroidManifest.xml:34:9-43:20
+54            android:name="com.phonecl.armeasure.MainActivity"
+54-->/Users/fcj/workspace/Github_space/AR-Ruler/android/app/src/main/AndroidManifest.xml:35:13-41
+55            android:exported="true"
+55-->/Users/fcj/workspace/Github_space/AR-Ruler/android/app/src/main/AndroidManifest.xml:36:13-36
+56            android:screenOrientation="portrait"
+56-->/Users/fcj/workspace/Github_space/AR-Ruler/android/app/src/main/AndroidManifest.xml:37:13-49
+57            android:windowSoftInputMode="adjustPan" >
+57-->/Users/fcj/workspace/Github_space/AR-Ruler/android/app/src/main/AndroidManifest.xml:38:13-52
+58            <intent-filter>
+58-->/Users/fcj/workspace/Github_space/AR-Ruler/android/app/src/main/AndroidManifest.xml:39:13-42:29
+59                <action android:name="android.intent.action.MAIN" />
+59-->/Users/fcj/workspace/Github_space/AR-Ruler/android/app/src/main/AndroidManifest.xml:40:17-69
+59-->/Users/fcj/workspace/Github_space/AR-Ruler/android/app/src/main/AndroidManifest.xml:40:25-66
+60
+61                <category android:name="android.intent.category.LAUNCHER" />
+61-->/Users/fcj/workspace/Github_space/AR-Ruler/android/app/src/main/AndroidManifest.xml:41:17-77
+61-->/Users/fcj/workspace/Github_space/AR-Ruler/android/app/src/main/AndroidManifest.xml:41:27-74
+62            </intent-filter>
+63        </activity>
+64        <activity
+64-->/Users/fcj/workspace/Github_space/AR-Ruler/android/app/src/main/AndroidManifest.xml:45:9-48:55
+65            android:name="com.phonecl.armeasure.settings.SettingsActivity"
+65-->/Users/fcj/workspace/Github_space/AR-Ruler/android/app/src/main/AndroidManifest.xml:46:13-54
+66            android:screenOrientation="portrait"
+66-->/Users/fcj/workspace/Github_space/AR-Ruler/android/app/src/main/AndroidManifest.xml:47:13-49
+67            android:windowSoftInputMode="adjustPan" />
+67-->/Users/fcj/workspace/Github_space/AR-Ruler/android/app/src/main/AndroidManifest.xml:48:13-52
+68        <activity
+68-->/Users/fcj/workspace/Github_space/AR-Ruler/android/app/src/main/AndroidManifest.xml:50:9-53:55
+69            android:name="com.phonecl.armeasure.settings.FeedbackActivity"
+69-->/Users/fcj/workspace/Github_space/AR-Ruler/android/app/src/main/AndroidManifest.xml:51:13-54
+70            android:screenOrientation="portrait"
+70-->/Users/fcj/workspace/Github_space/AR-Ruler/android/app/src/main/AndroidManifest.xml:52:13-49
+71            android:windowSoftInputMode="adjustPan" />
+71-->/Users/fcj/workspace/Github_space/AR-Ruler/android/app/src/main/AndroidManifest.xml:53:13-52
+72
+73        <!-- The minimal version code of ARCore APK required for an app using this SDK. -->
+74        <meta-data
+74-->[com.google.ar:core:1.32.0] /Users/fcj/.gradle/caches/transforms-3/3b35fa573196404c9adf81c57c209850/transformed/jetified-core-1.32.0/AndroidManifest.xml:36:9-38:41
+75            android:name="com.google.ar.core.min_apk_version"
+75-->[com.google.ar:core:1.32.0] /Users/fcj/.gradle/caches/transforms-3/3b35fa573196404c9adf81c57c209850/transformed/jetified-core-1.32.0/AndroidManifest.xml:37:13-62
+76            android:value="221020000" /> <!-- This activity is critical for installing ARCore when it is not already present. -->
+76-->[com.google.ar:core:1.32.0] /Users/fcj/.gradle/caches/transforms-3/3b35fa573196404c9adf81c57c209850/transformed/jetified-core-1.32.0/AndroidManifest.xml:38:13-38
+77        <activity
+77-->[com.google.ar:core:1.32.0] /Users/fcj/.gradle/caches/transforms-3/3b35fa573196404c9adf81c57c209850/transformed/jetified-core-1.32.0/AndroidManifest.xml:40:9-46:80
+78            android:name="com.google.ar.core.InstallActivity"
+78-->[com.google.ar:core:1.32.0] /Users/fcj/.gradle/caches/transforms-3/3b35fa573196404c9adf81c57c209850/transformed/jetified-core-1.32.0/AndroidManifest.xml:41:13-62
+79            android:configChanges="keyboardHidden|orientation|screenSize"
+79-->[com.google.ar:core:1.32.0] /Users/fcj/.gradle/caches/transforms-3/3b35fa573196404c9adf81c57c209850/transformed/jetified-core-1.32.0/AndroidManifest.xml:42:13-74
+80            android:excludeFromRecents="true"
+80-->[com.google.ar:core:1.32.0] /Users/fcj/.gradle/caches/transforms-3/3b35fa573196404c9adf81c57c209850/transformed/jetified-core-1.32.0/AndroidManifest.xml:43:13-46
+81            android:exported="false"
+81-->[com.google.ar:core:1.32.0] /Users/fcj/.gradle/caches/transforms-3/3b35fa573196404c9adf81c57c209850/transformed/jetified-core-1.32.0/AndroidManifest.xml:44:13-37
+82            android:launchMode="singleTop"
+82-->[com.google.ar:core:1.32.0] /Users/fcj/.gradle/caches/transforms-3/3b35fa573196404c9adf81c57c209850/transformed/jetified-core-1.32.0/AndroidManifest.xml:45:13-43
+83            android:theme="@android:style/Theme.Material.Light.Dialog.Alert" />
+83-->[com.google.ar:core:1.32.0] /Users/fcj/.gradle/caches/transforms-3/3b35fa573196404c9adf81c57c209850/transformed/jetified-core-1.32.0/AndroidManifest.xml:46:13-77
+84
+85        <provider
+85-->[androidx.emoji2:emoji2:1.2.0] /Users/fcj/.gradle/caches/transforms-3/1d07733bb5de293e9645597f9d8f89e9/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+86            android:name="androidx.startup.InitializationProvider"
+86-->[androidx.emoji2:emoji2:1.2.0] /Users/fcj/.gradle/caches/transforms-3/1d07733bb5de293e9645597f9d8f89e9/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:25:13-67
+87            android:authorities="com.phonecl.armeasure.debug.androidx-startup"
+87-->[androidx.emoji2:emoji2:1.2.0] /Users/fcj/.gradle/caches/transforms-3/1d07733bb5de293e9645597f9d8f89e9/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:26:13-68
+88            android:exported="false" >
+88-->[androidx.emoji2:emoji2:1.2.0] /Users/fcj/.gradle/caches/transforms-3/1d07733bb5de293e9645597f9d8f89e9/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:27:13-37
+89            <meta-data
+89-->[androidx.emoji2:emoji2:1.2.0] /Users/fcj/.gradle/caches/transforms-3/1d07733bb5de293e9645597f9d8f89e9/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+90                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+90-->[androidx.emoji2:emoji2:1.2.0] /Users/fcj/.gradle/caches/transforms-3/1d07733bb5de293e9645597f9d8f89e9/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:30:17-75
+91                android:value="androidx.startup" />
+91-->[androidx.emoji2:emoji2:1.2.0] /Users/fcj/.gradle/caches/transforms-3/1d07733bb5de293e9645597f9d8f89e9/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:31:17-49
+92            <meta-data
+92-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/fcj/.gradle/caches/transforms-3/35c0b92ece1390da055ba4747b8713d6/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
+93                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+93-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/fcj/.gradle/caches/transforms-3/35c0b92ece1390da055ba4747b8713d6/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
+94                android:value="androidx.startup" />
+94-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/fcj/.gradle/caches/transforms-3/35c0b92ece1390da055ba4747b8713d6/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
+95        </provider>
+96    </application>
+97
+98</manifest>
